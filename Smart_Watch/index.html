@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smartwatch UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="watch">
+    <div class="top-bar">
+      <span id="time">--:--</span>
+      <span id="battery">🔋 100%</span>
+    </div>
+
+    <div class="info-section">
+      <div class="metric">
+        <h3>❤️ Heart Rate</h3>
+        <p id="heartRate">-- bpm</p>
+      </div>
+      <div class="metric">
+        <h3>👟 Steps</h3>
+        <p id="stepCount">0 steps</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button onclick="simulateHeartRate()">Check HR</button>
+      <button onclick="simulateStep()">Add Step</button>
+    </div>
+
+    <div class="bottom-bar">
+      <span id="date">--</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
